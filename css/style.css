@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+background-color: white;
+background-image: url("https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1533&q=80");
+
+}
+
+h1 {
+font-family: 'Playfair Display SC', serif;
+}
+
+p {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+}
+
+
+p2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+
+}
+
+/* HEADER STYLE */
+
+.smallbox {
+background-color: white;
+  padding: 30px;
+  margin: 0px;
+  width: 100%;
+}
+
+/* END HEADER STYLE */
+
+/* BUTTON STYLE */
+/* MAJOR CHANGES MADE HERE */
+/*So, basically, your style.css wasn't in the folder that your
+  link rel line on your html was saying it was in (css/style.css).
+  This caused it to look like none of your actual changes were applying,
+  because the stylesheet was located in the root folder with everything
+  else such as index.html and so on. I made a css folder, and put this
+  stylesheet in it.
+
+  Then, I added the button selector below, and chose what was supposed
+  to happen when someone hovered over it. Feel free to change anything
+  like the BG color or color for font, etc.
+
+  KEEP IN MIND:
+  All buttons made without their own classes or IDs will follow the styles
+  below unless you tell them otherwise in this stylesheet.
+
+  - Brandon
+*/
+button {
+  background-color: white;
+  border-radius: 5px; /*Rounds the corners; more modern-looking but you can delete this*/
+  border: none; /*Erases the standard border of a button*/
+  color: black; /*Changes the font color*/
+  padding: 15px 32px; /*Adds internal space from top to bottom, left to right*/
+  text-align: center;
+  text-decoration: none; /*No underlines for links*/
+  display: inline-block; /*Can sit next to other elements, Allows to set a width and height on the element, allows top and bottom margins/paddings*/
+  font-size: 16px;
+}
+
+button:hover {
+  background-image: linear-gradient(red,salmon); /*Changes to gradient upon hovering over button with cursor*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; /*Changes the user's cursor to a hand when hovering over button*/
+}
+
+
+/* TOP NAVBAR STYLING */
+
+#navbar {
+list-style-type: none;
+margin: 60;
+padding: 0;
+overflow: hidden;
+background-color: red;
+width: 100%;
+}
+
+#navbar a {
+  font-family: 'Oswald', sans-serif;
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17;
+}
+
+#navbar a:hover {
+color: white;
+background-color: RED;
+}
+
+.active {
+background-color: white;
+
+}
+
+/* END TOP NAVBAR STYLING */
+
+/* CONTENT Starts */
+
+/* BANNER STYLING */
+.banner {
+  display:center;
+  background-color: black;
+  height: 500px;
+  padding: 20px;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* CONTENT STYLING */
+
+.container {
+  float: left;
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: grey;
+  height: 400px;
+  width: 27%;
+  margin: 20px;
+}
+
+/*Added this ID because it wasn't being used, which is why your content
+  wasn't centered with the lilboxes and their own content. Basically,
+  this is the box for the boxes.
+*/
+#box {
+  display: flex; /*This property value allows us to use alignment properties like the one below*/
+  justify-content: center; /*follows rules of display: flex, centers content*/
+  width: 100%; /*Makes the box fit edge to edge so that the content inside aligns to page*/
+}
+
+.lilbox {
+  background-color: rgba(255, 82, 82, 100);
+  padding: 20px; /*You needed some inside box space here so I added padding*/
+}
+
+.bigbox {
+  background-color: grey;
+  padding: 20px;
+  margin: 20px;
+  width: 100;
+}
+
+
+/* START BOTTOM NAVBAR */
+.navbar {
+  list-style-type: none;
+  margin: 20;
+  padding: 0;
+  overflow: hidden;
+  background-color: RED;
+
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  font-family: 'Oswald', sans-serif;
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: red;
+  color: BLACK;
+}
+  /* END BOTTOM NAVBAR */
+
+ul {
+list-style-type: square;
+}
