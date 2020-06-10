@@ -33,13 +33,29 @@
   </ul>
 
 <!-- NAV STOPS HERE -->
+       
+       <!-- VIDEO STARTS HERE -->
+<video autoplay muted loop id="myVideo" width="100%">
+<source src="video/smoke4.mp4" type="video/mp4">
+</video>
 
-<div class="banner">
-<img src="logos/Sword_web-04.png" alt="image" class="center" style="width:40%">;
+<script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
 
-</div>
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+      }
+    }
+  </script>
 
-
+  <!-- VIDEO STOP HERE -->
+       
 <!-- Comment starts here -->
 
 <div class="bigbox">
